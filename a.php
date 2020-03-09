@@ -1,6 +1,6 @@
 <!--
 File handling and transfer for
-NoteShift 1.0
+MusiPose
 -->
 
 
@@ -15,12 +15,7 @@ NoteShift 1.0
     $uploadOk = 1;
     $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
     
-//    if (isset($_FILES['submittedFile'])) {
-//    $fileName = $_FILES['submittedFile']['name'];
-//    $fileTmpName = $_FILES['submittedFile']['tmp_name'];
-//    $fileSize = $_FILES['submittedFile']['size'];
-//    $fileError = $_FILES['submittedFile']['error'];
-//    $fileType = $_FILES['submittedFile']['type'];
+
 
 //    $fileExt = strtolower(end(explode('.', $fileName)));
         
@@ -31,7 +26,7 @@ NoteShift 1.0
         echo "Sorry, only JPG, JPEG, & PDF files are allowed.";
         $uploadOk = 0;
     }
-        // Check if $uploadOk is set to 0 by an error
+       
         if ($uploadOk === 0) {
             echo "Sorry, your file was not uploaded.";
             // if everything is ok, try to upload file
@@ -44,17 +39,5 @@ NoteShift 1.0
                 echo "\n\nSorry, there was an error uploading your file.";
             }
         }
-//        if (empty($fileError)===true) {
-//            move_uploaded_file($fileTmpName, "uploads/".$fileName)
-//            //$fileNameNew = uniqid('', true).".".$fileExt;
-//            //$fileDestination = 'uploads/'.$fileNameNew;
-//            //move_uploaded_file($fileTmpName, $fileDestination);
-//            header("Location: learning.html?uploadsuccess");
-//            echo "Success";
-//        }
-//        else{
-//            echo "There was an error uploading your file!";
-//        }
-    
-//}
+
 ?>
